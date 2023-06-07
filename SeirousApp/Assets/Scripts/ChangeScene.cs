@@ -7,6 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
     public GameObject clickMeal;
     public GameObject line;
+    public GameObject shop;
     public TextMeshProUGUI text;
 
 
@@ -25,10 +26,26 @@ public class ChangeScene : MonoBehaviour
         clickMeal.SetActive(true);
     }
 
+    public void panelMealOff()
+    {
+        clickMeal.SetActive(false);
+    }
+
     public void paneleatMeal()
     {
         clickMeal.SetActive(false);
         line.SetActive(true);
         text.text = "배부르다 ....";
+    }
+
+    public void panelShop()
+    {
+        shop.SetActive(true);
+    }
+
+    public void panelShopOff()
+    {
+        shop.SetActive(false);
+
     }
 }
