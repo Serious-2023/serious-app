@@ -8,7 +8,10 @@ public class ChangeScene : MonoBehaviour
     public GameObject clickMeal;
     public GameObject line;
     public GameObject shop;
+    public GameObject buy;
     public TextMeshProUGUI text;
+    public TextMeshProUGUI coinValue;
+
 
 
     /*public void ToMain1()
@@ -47,5 +50,23 @@ public class ChangeScene : MonoBehaviour
     {
         shop.SetActive(false);
 
+    }
+
+    public void panelBuy()
+    {
+        buy.SetActive(true);
+    }
+
+    //buy
+    public void panelBuyOff()
+    {
+        buy.SetActive(false);
+        coinValue.text = "89900";
+
+    }
+
+    public void panelBuyOff2()
+    {
+        buy.SetActive(false);
     }
 }
