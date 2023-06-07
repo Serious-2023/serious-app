@@ -9,6 +9,7 @@ public class ChangeScene : MonoBehaviour
     public GameObject line;
     public TextMeshProUGUI text;
 
+
     /*public void ToMain1()
     {
         SceneManager.LoadScene("main 1");
@@ -28,6 +29,6 @@ public class ChangeScene : MonoBehaviour
     {
         clickMeal.SetActive(false);
         line.SetActive(true);
-        text.text = "I'm full!!";
+        text.text = "배부르다 ....";
     }
 }
