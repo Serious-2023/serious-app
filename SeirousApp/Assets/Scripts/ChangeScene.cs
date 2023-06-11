@@ -9,6 +9,8 @@ public class ChangeScene : MonoBehaviour
     public GameObject line;
     public GameObject shop;
     public GameObject buy;
+    public GameObject Calendar;
+    public GameObject Chair;
     public TextMeshProUGUI text;
     public TextMeshProUGUI coinValue;
 
@@ -68,5 +70,20 @@ public class ChangeScene : MonoBehaviour
     public void panelBuyOff2()
     {
         buy.SetActive(false);
+    }
+
+    public void panelCalendar()
+    {
+        Calendar.SetActive(true);
+    }
+
+    public void panelCalendarOff()
+    {
+        Calendar.SetActive(false);
+    }
+
+    public void panelChair()
+    {
+        Chair.SetActive(true);
     }
 }
