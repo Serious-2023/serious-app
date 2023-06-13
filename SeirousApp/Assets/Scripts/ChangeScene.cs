@@ -11,6 +11,9 @@ public class ChangeScene : MonoBehaviour
     public GameObject buy;
     public GameObject Calendar;
     public GameObject Chair;
+    public GameObject Char_sad;
+    public GameObject Char_happy;
+
     public TextMeshProUGUI text;
     public TextMeshProUGUI coinValue;
 
@@ -40,6 +43,8 @@ public class ChangeScene : MonoBehaviour
     {
         clickMeal.SetActive(false);
         line.SetActive(true);
+        Char_sad.SetActive(false);
+        Char_happy.SetActive(true);
         text.text = "배부르다 ....";
     }
 
