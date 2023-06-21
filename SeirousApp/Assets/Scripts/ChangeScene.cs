@@ -194,11 +194,13 @@ public class ChangeScene : MonoBehaviour
     public void panelBuy()
     {
         buy.SetActive(true);
+        
     }
 
     //buy
     public void panelBuyOff()
     {
+        Chair.SetActive(true);
         buy.SetActive(false);
         coinValue.text = "89900";
 
@@ -217,10 +219,5 @@ public class ChangeScene : MonoBehaviour
     public void panelCalendarOff()
     {
         Calendar.SetActive(false);
-    }
-
-    public void panelChair()
-    {
-        Chair.SetActive(true);
     }
 }
